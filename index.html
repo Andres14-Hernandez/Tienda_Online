@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/general.css">
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <title>Alura Geek</title>
+    </head>
+    <body>
+
+        <!-- HEADER -->
+        <header class="header">
+            <img src="assets/Logo.svg" class="header__title" alt="">
+        </header>
+
+        <!-- MAIN -->
+        <main class="main"> 
+            <section class="main__products">
+                <h1>Mis productos</h1>
+                <ul class="main__products__items" data-product>
+                    <!-- CARD -->
+                </ul>
+            </section>
+            
+            <!-- FORM -->
+            <section class="main__form" data-form>
+                <h1>Agregar Producto:</h1>    
+                <form class="form__container" data-form>
+                    <input placeholder="Nombre..." type="text" data-name>
+                    <input placeholder="Precio..." type="text" data-price>
+                    <input placeholder="Imagen..." type="text" data-image>
+                    <span class="mensajeError" data-mensage></span>
+                    <div class="button__container">
+                        <button type="submit" class="button__submit" id="button"> Enviar</button>
+                        <button type="reset" class="button__clear" id="button">Limpiar</button>
+                    </div>
+                </form>                
+            </section>
+        </main>
+
+        <footer class="footer-container"> 
+            <div>
+                <img src="./assets/Logo.svg"/>
+            </div>
+            <p> Desarollado por Andrés Hernández</p>
+            <small>Alura Latam 2024</small>
+        </footer>
+
+        <script type="module" src="js/controllers/main.js"></script>
+
+    </body>
+</html>
