@@ -1,6 +1,6 @@
 /* HEADER */
 .header{
-    background-color: #024059;
+    background-color: #035175;
     display: flex;
     padding: 20px;
     justify-content: center;
@@ -12,7 +12,7 @@
 
 /* BODY */
 body{
-    background-color: #5FCDD9;
+    background-color: #cbefff;
 }
 
 
@@ -27,7 +27,7 @@ body{
     flex-direction: column;
     margin: 3%;
     width: 60%;
-    scrollbar-color: #024059 transparent;
+    scrollbar-color: #035175 transparent;
 }
 
 .main__products h1{
@@ -50,13 +50,20 @@ body{
 .card{
     display: flex;
     flex-direction: column;
-    border: solid 5px #ffdb4b;
+    border: solid 5px #011721;
     border-radius: 15px;
-    background-color: #024059;
+    background-color: #035175;
     height: 300px;
     width: 250px;
     padding: 10px;
     margin: 20px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
 }
 
 .img_card{
@@ -105,13 +112,20 @@ body{
 }
 
 .form__container input{
-    border: solid 5px #ffdb4b;
-    background-color: #024059;
+    border: solid 5px #011721;
+    background-color: #035175;
     border-radius: 10px;
     padding: 1%;
     margin: 2%;
     color: white;
+    transition: 0.5s;
 }
+
+.form__container input:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
+}
+
 .button__container{
     display: flex;
     flex-direction: column;
@@ -119,18 +133,24 @@ body{
 }
 
 .button__container button{
-    border: solid 5px #ffdb4b;
-    background-color: #024059;
+    border: solid 5px #011721;
+    background-color: #035175;
     border-radius: 10px;
     color: white;
     padding: 10px;
     margin: 2%;
+    transition: 0.5s;
+}
+
+.button__container button:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
 }
 
 
 /* FOOTER */
 .footer-container {
-    background-color: #024059;
+    background-color: #035175;
     display: flex;
     flex-direction: column;
     align-items: center;
